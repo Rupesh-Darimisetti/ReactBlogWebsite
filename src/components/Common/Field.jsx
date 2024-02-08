@@ -12,8 +12,9 @@ class Field extends Component {
                             required="required"
                             placeholder={this.props.placeholder}
                             data-sb-validations={`required,${this.props.name}`}
-                            value={this.props.value}
-                            onChange={(e) => this.props.onChange(e)}
+                            name={this.props.name}
+                            onChange={this.props.onChange}
+                            onBlur={this.props.onBlur}
                         />
                         <div className="invalid-feedback" data-sb-feedback={`${this.props.name}:required`}>An {this.props.name} is required.</div>
                     </div>
@@ -26,13 +27,18 @@ class Field extends Component {
                             required="required"
                             placeholder={this.props.placeholder}
                             data-sb-validations="required"
-                            value={this.props.value}
-                            onChange={(e) => this.props.onChange(e)}
+                            name={this.props.name}
+                            onChange={this.props.onChange}
+                            onBlur={this.props.onBlur}
                         />
                         <div className="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                     </div>
                 }
-
+                <p className="help-block text-danger">
+                    {(this.props.touched && this.props.errors) &&
+                        <span>This field is required</span>
+                    }
+                </p>
 
             </div>
         );
