@@ -3,6 +3,7 @@ import './App.css';
 import PageWrapper from './components/PageWrapper';
 //pages
 import About from './components/Pages/About';
+import Contact from './components/Pages/Contact';
 import Home from './components/Pages/Home';
 
 function App() {
@@ -18,6 +19,10 @@ function App() {
           <Route
             path='/about'
             Component={About}
+          />
+          <Route
+            path='/contact'
+            Component={Contact}
           />
         </Routes>
       </PageWrapper>
