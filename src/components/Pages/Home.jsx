@@ -4,6 +4,7 @@ import image from "../assets/img/header-bg.jpg";
 
 // Reusable Components
 import About from '../Common/About';
+import Clients from '../Common/Clients';
 import Portfolio from '../Common/Portfolio';
 import Services from '../Common/Services';
 import Team from '../Common/Team';
@@ -23,6 +24,7 @@ class Home extends Component {
                 <Portfolio />
                 <About />
                 <Team />
+                <Clients />
             </>
         );
     }
