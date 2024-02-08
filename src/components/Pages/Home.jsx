@@ -3,6 +3,7 @@ import Header from '../Common/Header';
 import image from "../assets/img/header-bg.jpg";
 
 // Reusable Components
+import About from '../Common/About';
 import Portfolio from '../Common/Portfolio';
 import Services from '../Common/Services';
 class Home extends Component {
@@ -19,6 +20,7 @@ class Home extends Component {
                 />
                 <Services />
                 <Portfolio />
+                <About />
             </>
         );
     }
