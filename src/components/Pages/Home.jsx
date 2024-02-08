@@ -6,6 +6,7 @@ import image from "../assets/img/header-bg.jpg";
 import About from '../Common/About';
 import Portfolio from '../Common/Portfolio';
 import Services from '../Common/Services';
+import Team from '../Common/Team';
 class Home extends Component {
     render() {
         return (
@@ -21,6 +22,7 @@ class Home extends Component {
                 <Services />
                 <Portfolio />
                 <About />
+                <Team />
             </>
         );
     }
